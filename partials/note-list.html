@@ -1,0 +1,28 @@
+    Search: <input type="text" name="query"/>
+    Sort by:
+    <select name="orderProp">
+      <option value="title">Title</option>
+      <option value="-updated">Newest</option>
+    </select>
+
+
+<h2>Notes</h2>
+
+<table class="bordered-table">
+	<tr>
+		<th>Title</th>
+		<th>Updated</th>
+		<th>&nbsp;</th>
+	</tr>
+	<tr ng:repeat="note in notes.$filter(query).$orderBy(orderProp)">
+		<td><a href="#/notes/{{note.id}}">{{note.title}}</a></td>
+		<td>{{note.updated | date:'MM/dd/yyyy @ h:mma'}}</td>
+		<td><a href="" ng:click="edit(note.id)" title="Edit"><img src="images/page_edit.png"></a> <a href="" ng:click="delete(note.id)" title="Delete"><img src="images/page_delete.png"></a></td>
+	</tr>
+</table>
+
+<p ng:show="notes.length==0">
+	Sorry, there are no notes yet.
+</p>
+
+<a href="#/notes/add" class="btn primary">Add Note</a>
