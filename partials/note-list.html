@@ -17,7 +17,14 @@
 	<tr ng:repeat="note in notes.$filter(query).$orderBy(orderProp)">
 		<td><a href="#/notes/{{note.id}}">{{note.title}}</a></td>
 		<td>{{note.updated | date:'MM/dd/yyyy @ h:mma'}}</td>
-		<td><a href="" ng:click="edit(note.id)" title="Edit"><img src="images/page_edit.png"></a> <a href="" ng:click="delete(note.id)" title="Delete"><img src="images/page_delete.png"></a></td>
+				<td>
+					<a href="" ng:click="edit(note.id)" title="Edit" class="btn btn-default"> 
+						<span class="glyphicon glyphicon-edit"></span> Edit
+					</a> 
+					<a href="" ng:click="delete(note.id)" title="Delete" class="btn btn-default">
+						<span class="glyphicon glyphicon-remove"></span>Delete
+					</a>
+				</td>
 	</tr>
 </table>
 

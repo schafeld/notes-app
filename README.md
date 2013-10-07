@@ -1,9 +1,9 @@
 notes-app
 =========
 
-Simple notes app with Angular.js with Bootstrap3 and HTML5 (local storage).
+Simple notes app with Angular.js,Bootstrap3, and HTML5 (local storage).
 
-This is online here: http://www.schafeld.com/playground/notes-app/
+Project is online here: http://www.schafeld.com/playground/notes-app/
 
 
 Begans as / Based on tutorial, available here: 
@@ -15,4 +15,4 @@ Mind you, however, this does no longer strictly resemble the original tutorial c
 
 ##Installation
 
-For local testing run index.html through localhost
+For local testing run index.html through localhost.
