@@ -12,6 +12,7 @@ http://www.raymondcamden.com/index.cfm/2011/11/29/My-first-AngularJS-application
 
 Mind you, however, this does no longer strictly resemble the original tutorial code and will deviate further.
 
+(Keeping bower_components directory within repo because bower is not supported within 1and1 shared hosting environment.)
 
 ##Installation
 

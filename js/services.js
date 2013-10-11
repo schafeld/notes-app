@@ -1,3 +1,7 @@
+/* Source: http://www.raymondcamden.com/index.cfm/2011/11/29/My-first-AngularJS-application */
+/* TODO: Make work with Angular 1.0+ 
+ *       i.e. replace .service ? 
+*/
 /* http://docs.angularjs.org/#!angular.service */
 
 angular.service('Note', function(){
